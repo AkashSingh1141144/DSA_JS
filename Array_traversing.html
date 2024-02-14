@@ -8,8 +8,13 @@
 	for (let i = 0; i <data.length; i++) {
 		document.write(`${i} is ${data[i] } <br>`)
 	}
+	function getElement() {
+		let el = document.getElementById("element").value
+		alert(data[el])
+	}
 </script>
 <body>
-	
+	<input type="text" id="element" />
+	<button onclick="getElement()">Get Element</button>
 </body>
 </html>
